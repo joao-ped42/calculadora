@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/style/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
 		<title>Calculadora</title>
 	</head>
 	<body>
@@ -12,6 +14,7 @@
 		<main>
 			<div class="calculadora">
 				<div class="tela_de_resultado">
+					<p class="pequeno" id="numero_anterior">0</p>
 					<p class="resultado" id="numero_resultado">0</p>
 				</div>
 				<div class="botoes">
@@ -40,10 +43,10 @@
 						<button class="botao" value="+">+</button>
 					</div>
 					<div class="fila">
+						<button class="botao" value=".">,</button>
 						<button class="botao" value="0">0</button>
-						<button class="botao" value=",">,</button>
-						<button class="botao" value="=">=</button>
-						<button class="botao" value="/">:</button>
+						<button class="botao igual" value="=">=</button>
+						<button class="botao" value="/">÷</button>
 					</div>
 				</div>
 			</div>
